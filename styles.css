@@ -1,4 +1,23 @@
+@font-face {
+    font-family: 'Undertale'; /*a name to be used later*/
+    src: url('media/MonsterFriendFore.otf'); /*URL to font*/
+}
+
 * {
     text-align: center;
     box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: Undertale, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vw;
+}
+
+.quoteHighlight {
+    color: #DC143C;
 }

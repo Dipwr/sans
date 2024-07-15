@@ -2,6 +2,14 @@
     font-family: 'Undertale'; /*a name to be used later*/
     src: url('media/MonsterFriendFore.otf'); /*URL to font*/
 }
+@font-face {
+    font-family: 'sansUndertale'; /*a name to be used later*/
+    src: url('media/comic-sans-ut.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'narration'; /*a name to be used later*/
+    src: url('media/8bitoperator.otf'); /*URL to font*/
+}
 
 * {
     text-align: center;
@@ -9,15 +17,79 @@
     color: white;
 }
 
+p {
+    font-family: narration;
+}
+
 body {
     background-color: black;
+    padding: 20px;
 }
 
 h1 {
     font-family: Undertale, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 10vw;
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+
+.mainText {
+    border: 3px solid white;
+    padding: 10px;
+    max-width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#titleImage {
+    height: 30vw;
+    image-rendering: pixelated;
+}
+
+.titleQuote {
+    font-family: "Raleway";
+    font-style: italic;
+}
+
+.sansQuote {
+    font-family: sansUndertale;
+    font-style: italic;
+}
+
+.judgeQuote {
+    font-family: sansUndertale;
+    font-style: italic;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#statQuotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    max-width: 920px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#EXP {
+    grid-column: 1/1;
+}
+
+#LOVE {
+    grid-column: 3/3;
+}
+
+#overworldSans {
+    width: 70%;
 }
 
 .quoteHighlight {
     color: #DC143C;
+}
+
+.pixelImg {
+    image-rendering: pixelated;
 }

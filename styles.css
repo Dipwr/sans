@@ -10,6 +10,10 @@
     font-family: 'narration'; /*a name to be used later*/
     src: url('media/8bitoperator.otf'); /*URL to font*/
 }
+@font-face {
+    font-family: 'mercy'; /*a name to be used later*/
+    src: url('media/mercy.otf'); /*URL to font*/
+}
 
 * {
     text-align: center;
@@ -54,6 +58,7 @@ h1 {
 .sansQuote {
     font-family: sansUndertale;
     font-style: italic;
+    font-weight: 300;
 }
 
 .judgeQuote {
@@ -92,4 +97,58 @@ h1 {
 
 .pixelImg {
     image-rendering: pixelated;
+}
+
+.secondaryHr {
+    border-color: rgba(255, 255, 255, 0.5);
+    margin: 8px 70px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 920px;
+}
+
+#AUs {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#AUs p .lowercase {
+    font-size: 29.867px;
+    margin-left: -1px;
+    margin-right: 2px;
+}
+
+.button {
+    align-items: center;
+    font-family: mercy;
+    font-size: 42.667px;
+    letter-spacing: -5px;
+    color: rgba(235,122,35,255);
+    width: max-content;
+    height: max-content;
+    margin: -6px 1px -1px 6px;
+}
+
+.buttonBorder {
+    display: block;
+    border: 3px solid rgba(235,122,35,255);
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.buttonBorder:hover .button {
+    color: rgba(255,255,0,255);
+}
+
+.buttonBorder:hover {
+    border: 3px solid rgba(255,255,0,255);
 }

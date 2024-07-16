@@ -14,6 +14,10 @@
     font-family: 'mercy'; /*a name to be used later*/
     src: url('media/mercy.otf'); /*URL to font*/
 }
+@font-face {
+    font-family: 'ceroba'; /*a name to be used later*/
+    src: url('media/ceroba.otf'); /*URL to font*/
+}
 
 * {
     text-align: center;
@@ -21,13 +25,12 @@
     color: white;
 }
 
-p {
-    font-family: narration;
-}
-
 body {
     background-color: black;
     padding: 20px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -35,6 +38,77 @@ h1 {
     font-size: 10vw;
     margin-top: 5vh;
     margin-bottom: 0;
+}
+
+#pacifist {
+    font-size: 7vw;
+}
+
+#AUs span {
+    font-size: 7vw;
+}
+
+@media screen and (min-width: 990px) {
+    #sans {
+        font-size: 99px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    #neutral {
+        font-size: 84px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    #pacifist {
+        font-size: 73.5px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    #noMercy {
+        font-size: 84px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #AUs {
+        font-size: 90px;
+    }
+
+    #AUs span {
+        font-size: 63px;
+    }
+}
+
+h2, h3 {
+    font-family: ceroba;
+    font-weight: 500;
+}
+
+p {
+    font-family: narration;
+}
+
+hr {
+    height: 3px;
+    background-color: white;
+    max-width: 920px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.secondaryHr {
+    height: 1px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+}
+
+.sectionTitle {
+    font-family: Undertale, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
 }
 
 .mainText {
@@ -46,8 +120,8 @@ h1 {
 }
 
 #titleImage {
-    height: 30vw;
-    image-rendering: pixelated;
+    width: 30%;
+    height: auto;
 }
 
 .titleQuote {
@@ -72,7 +146,7 @@ h1 {
 
 #statQuotes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
     place-items: center;
     max-width: 920px;
     margin-right: auto;
@@ -81,14 +155,17 @@ h1 {
 
 #EXP {
     grid-column: 1/1;
+    min-width: 190px;
 }
 
 #LOVE {
     grid-column: 3/3;
+    min-width: 190px;
 }
 
 #overworldSans {
-    width: 70%;
+    grid-column: 2/2;
+    width: 80%;
 }
 
 .quoteHighlight {
@@ -99,12 +176,23 @@ h1 {
     image-rendering: pixelated;
 }
 
-.secondaryHr {
-    border-color: rgba(255, 255, 255, 0.5);
-    margin: 8px 70px;
+a:link { 
+    text-decoration: none; 
 }
 
-.buttonGroup {
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: none; 
+}
+
+a:active { 
+    text-decoration: none; 
+}
+
+.routes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -114,12 +202,18 @@ h1 {
     max-width: 920px;
 }
 
-#AUs {
+.nonRoutes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 20%;
+    max-width: 920px;
 }
 
-#AUs p .lowercase {
+#AUsButton p .lowercase {
     font-size: 29.867px;
     margin-left: -1px;
     margin-right: 2px;
@@ -151,4 +245,23 @@ h1 {
 
 .buttonBorder:hover {
     border: 3px solid rgba(255,255,0,255);
+}
+
+.AU {
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    width: min-content;
+    height: min-content;
+}
+
+.AUContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.modified {
+    font-size: 16px;
 }

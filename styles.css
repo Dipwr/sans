@@ -122,6 +122,18 @@ hr {
 #titleImage {
     width: 30%;
     height: auto;
+    position: relative;
+}
+
+.titleAni {
+    animation-name: dodge;
+    animation-duration: 0.8s;
+}
+
+@keyframes dodge {
+    0% {right: 0;}
+    50% {right: 30%;}
+    100% {right: 0;}
 }
 
 .titleQuote {

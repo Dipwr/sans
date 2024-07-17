@@ -192,6 +192,16 @@ a:active {
     text-decoration: none; 
 }
 
+.caption {
+    font-size: small;
+    color: rgba(255,255,255,0.8);
+}
+
+.caption a {
+    text-decoration: underline; 
+    color: rgba(255,255,255,0.9);
+}
+
 .routes {
     display: flex;
     flex-direction: row;

@@ -1,3 +1,7 @@
+function setup(){
+    document.getElementById("modified").innerHTML = "Last modified: Thu Jul 18 00:25:21 am 2024";
+}
+
 //on click animation code found on: https://stackoverflow.com/questions/4847996/css-animation-onclick
 function titleAni() {
     let element = document.getElementById("titleImage")
@@ -15,6 +19,8 @@ const images = [
 ];
 
 let snd = new Audio("media/slash.wav"); // buffers automatically when created
+let snd2 = new Audio("media/select-short.wav");
+
 let x = 0; 
 let id;
 function startAnimation() {
@@ -34,11 +40,14 @@ function Animate() {
         document.getElementById("slash").style.display = "none";
         clearInterval(id);
     }
-} 
-
-/*
-let snd2 = new Audio("media/select.mp3");
-function select(){
-    snd2.play()
 }
-*/
+
+
+function buttonClick(href) {
+    snd2.onended = function() {
+        window.location.href = href;
+    };
+    snd2.play();
+}
+
+setup();

@@ -129,6 +129,10 @@ hr {
     position: relative;
 }
 
+#titleImage:hover  {
+    cursor: pointer;
+}
+
 #slash {
     display: none;
     height: 100%;
@@ -220,7 +224,8 @@ a:active {
 }
 
 .caption {
-    font-size: small;
+    font-family: "Raleway";
+    font-size: 13px;
     color: rgba(255,255,255,0.8);
 }
 
@@ -282,6 +287,15 @@ a:active {
 
 .buttonBorder:hover {
     border: 3px solid rgba(255,255,0,255);
+    cursor: pointer;
+}
+
+.buttonBorder:active .button {
+    color: rgba(255,255,175,255);
+}
+
+.buttonBorder:active {
+    border: 3px solid rgba(255,255,175,255);
 }
 
 .AU {
@@ -299,6 +313,6 @@ a:active {
     justify-content: space-evenly;
 }
 
-.modified {
+#modified {
     font-size: 16px;
 }

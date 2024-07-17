@@ -19,7 +19,10 @@
     <body>
         <h1 id="sans">Sans</h1>
         <h2 class="titleQuote">"The easiest enemy. Can only deal 1 damage."</h2>
-        <img id="titleImage" class="pixelImg" onclick="titleAni()" src="media/Sans_battle_idle.webp" height="150">
+        <div class="overlayContainer" onclick="startAnimation()">
+            <img id="titleImage" class="pixelImg" src="media/Sans_battle_idle.webp" height="150">
+            <img id="slash" class="pixelImg" src="media/slash/frame_0_delay-0.13s.png">
+        </div>
         <!--<h2>Introduction</h2>-->
         <h3 class="titleQuote">
          "i'm sans. sans the skeleton" -Sans

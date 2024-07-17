@@ -119,20 +119,35 @@ hr {
     margin-left: auto;
 }
 
+.overlayContainer {
+    position: relative;
+}
+
 #titleImage {
     width: 30%;
     height: auto;
     position: relative;
 }
 
+#slash {
+    display: none;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .titleAni {
     animation-name: dodge;
-    animation-duration: 0.8s;
+    animation-duration: 2s;
 }
 
 @keyframes dodge {
     0% {right: 0;}
-    50% {right: 30%;}
+    25% {right: 25%;}
+    65% {right: 25%;}
     100% {right: 0;}
 }
 

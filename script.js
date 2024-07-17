@@ -5,3 +5,40 @@ function titleAni() {
     void element.offsetWidth; // trigger reflow
     element.classList.add('titleAni'); // start animation
 }
+
+
+const images = [ 
+    "media/slash/frame_0_delay-0.13s.png", "media/slash/frame_1_delay-0.13s.png",
+    "media/slash/frame_2_delay-0.13s.png", "media/slash/frame_3_delay-0.13s.png",
+    "media/slash/frame_4_delay-0.13s.png", "media/slash/frame_5_delay-0.13s.png",
+    "media/slash/frame_6_delay-0.13s.png"
+];
+
+let snd = new Audio("media/slash.wav"); // buffers automatically when created
+let x = 0; 
+let id;
+function startAnimation() {
+    x = 0;
+    titleAni()
+    clearInterval(id);
+    id = setInterval("Animate()", 130); 
+    document.getElementById("slash").style.display = "block";
+    snd.play();
+}
+  
+function Animate() { 
+    if (images.length != x){
+        document.getElementById("slash").src = images[x] 
+        x++; 
+    }else{
+        document.getElementById("slash").style.display = "none";
+        clearInterval(id);
+    }
+} 
+
+/*
+let snd2 = new Audio("media/select.mp3");
+function select(){
+    snd2.play()
+}
+*/

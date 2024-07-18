@@ -1,3 +1,13 @@
+let snd = new Audio("media/slash.wav");
+let snd2 = new Audio("media/select-short.wav");
+
+const images = [ 
+    "media/slash/frame_0_delay-0.13s.png", "media/slash/frame_1_delay-0.13s.png",
+    "media/slash/frame_2_delay-0.13s.png", "media/slash/frame_3_delay-0.13s.png",
+    "media/slash/frame_4_delay-0.13s.png", "media/slash/frame_5_delay-0.13s.png",
+    "media/slash/frame_6_delay-0.13s.png"
+];
+
 function setup(){
     document.getElementById("modified").innerHTML = "Last modified: Thu Jul 18 00:25:21 am 2024";
 }
@@ -10,17 +20,7 @@ function titleAni() {
     element.classList.add('titleAni'); // start animation
 }
 
-
-const images = [ 
-    "media/slash/frame_0_delay-0.13s.png", "media/slash/frame_1_delay-0.13s.png",
-    "media/slash/frame_2_delay-0.13s.png", "media/slash/frame_3_delay-0.13s.png",
-    "media/slash/frame_4_delay-0.13s.png", "media/slash/frame_5_delay-0.13s.png",
-    "media/slash/frame_6_delay-0.13s.png"
-];
-
-let snd = new Audio("media/slash.wav"); // buffers automatically when created
-let snd2 = new Audio("media/select-short.wav");
-
+//Frame by frame animation code modified from https://www.geeksforgeeks.org/how-to-create-frame-by-frame-animation-using-css-and-javascript/
 let x = 0; 
 let id;
 function startAnimation() {
@@ -51,3 +51,20 @@ function buttonClick(href) {
 }
 
 setup();
+
+//code for adding an alt attribute to an iFrame (https://stackoverflow.com/questions/8252676/alternate-text-for-iframes):
+$(function () {
+
+    $("iframe").not(":has([src])").each(function () {
+
+    var ifrm = this;
+
+    ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
+
+    ifrm.document.open();
+    ifrm.document.write($(this).attr("alt"));
+    ifrm.document.close();
+
+    });
+
+});

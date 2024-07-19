@@ -9,7 +9,7 @@ const images = [
 ];
 
 function setup(){
-    document.getElementById("modified").innerHTML = "Last modified: Thu Jul 18 00:25:21 am 2024";
+    document.getElementById("modified").innerHTML = "Last modified: Thu Jul 19 16:29:26 2024";
 }
 
 //on click animation code found on: https://stackoverflow.com/questions/4847996/css-animation-onclick
@@ -51,20 +51,3 @@ function buttonClick(href) {
 }
 
 setup();
-
-//code for adding an alt attribute to an iFrame (https://stackoverflow.com/questions/8252676/alternate-text-for-iframes):
-$(function () {
-
-    $("iframe").not(":has([src])").each(function () {
-
-    var ifrm = this;
-
-    ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
-
-    ifrm.document.open();
-    ifrm.document.write($(this).attr("alt"));
-    ifrm.document.close();
-
-    });
-
-});

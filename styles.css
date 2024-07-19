@@ -316,3 +316,24 @@ a:active {
 #modified {
     font-size: 16px;
 }
+
+#credits {
+    display: flex;
+    flex-direction: row;
+}
+
+.credit {
+    margin: 10px;
+}
+
+.textLink {
+    color: rgba(235,122,35,255);
+}
+
+.textLink:hover {
+    color: rgba(255,255,0,255);
+}
+
+.textLink:active {
+    color: rgba(255,255,175,255);
+}

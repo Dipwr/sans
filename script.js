@@ -1,11 +1,11 @@
-let snd = new Audio("media/slash.wav");
-let snd2 = new Audio("media/select-short.wav");
+let snd = new Audio("media/audio/slash.wav");
+let snd2 = new Audio("media/audio/select-short.wav");
 
 const images = [ 
-    "media/slash/frame_0_delay-0.13s.png", "media/slash/frame_1_delay-0.13s.png",
-    "media/slash/frame_2_delay-0.13s.png", "media/slash/frame_3_delay-0.13s.png",
-    "media/slash/frame_4_delay-0.13s.png", "media/slash/frame_5_delay-0.13s.png",
-    "media/slash/frame_6_delay-0.13s.png"
+    "media/images/slash/frame_0_delay-0.13s.png", "media/images/slash/frame_1_delay-0.13s.png",
+    "media/images/slash/frame_2_delay-0.13s.png", "media/images/slash/frame_3_delay-0.13s.png",
+    "media/images/slash/frame_4_delay-0.13s.png", "media/images/slash/frame_5_delay-0.13s.png",
+    "media/images/slash/frame_6_delay-0.13s.png"
 ];
 
 //on click animation code found on: https://stackoverflow.com/questions/4847996/css-animation-onclick

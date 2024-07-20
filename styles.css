@@ -1,22 +1,22 @@
 @font-face {
     font-family: 'Undertale'; /*a name to be used later*/
-    src: url('media/MonsterFriendFore.otf'); /*URL to font*/
+    src: url('media/fonts/MonsterFriendFore.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'sansUndertale'; /*a name to be used later*/
-    src: url('media/comic-sans-ut.otf'); /*URL to font*/
+    src: url('media/fonts/comic-sans-ut.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'narration'; /*a name to be used later*/
-    src: url('media/8bitoperator.otf'); /*URL to font*/
+    src: url('media/fonts/8bitoperator.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'mercy'; /*a name to be used later*/
-    src: url('media/mercy.otf'); /*URL to font*/
+    src: url('media/fonts/mercy.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'ceroba'; /*a name to be used later*/
-    src: url('media/ceroba.otf'); /*URL to font*/
+    src: url('media/fonts/ceroba.otf'); /*URL to font*/
 }
 
 * {

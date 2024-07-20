@@ -1,2 +1,2 @@
 # Sans
- A Sans fan Website exploring his involvement in the story of Undertale and some AUs
+ A Sans website exploring his involvement in Undertale, how he interacts within the different routes and some of the most popular AUs from the community.

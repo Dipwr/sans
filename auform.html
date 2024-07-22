@@ -18,57 +18,36 @@
         <!--The FontStruction “MERCY” (https://fontstruct.com/fontstructions/show/1021503) by “MaxiGamer” is licensed under a Creative Commons Attribution Non-commercial license (http://creativecommons.org/licenses/by-nc/3.0/).-->
     </head>
     <body>
-        <h1 id="AUs" class="sectionTitle">AU<span>s</span></h1>
-        <p class="mainText">Undertale AUs or alternate universes have recently emerged from the undertale fandom, undertale AUs first emerged from people imagining their favourite characters in situations difering from the classic Undertale story. There are many AUs each with loads of characters but by far the character with the most alternate versions is Sans.</p>
-        <hr class="secondaryHr">
-        <h2>Main Sans AUs:</h2>
-        <section class="AUContainer">
-        <figure class="underswap AU">
-        <h3>Underswap Sans</h3>
-        <img alt="An image of an alternate version of Sans in which he posseses the personality of Papyrus." src="media/images/SwapSans.webp" >
-        <figcaption class="caption">-Art by: popcornpr1nce (original post deleted)</figcaption>
-        <p>Underswap is an AU where all the main characters of undertale have swaped personalities with their counterpart, for example Sans and Papyrus, this AU is generally associated with more wholesome content.</p>
-        </figure>
-        <figure class="underfell AU">
-        <h3>Underfell Sans</h3>
-        <img alt="An image of an alternate version of Sans in which his morality is fliped turning a bit evil." class="pixelImg" src="media/images/underfell.png" >
-        <figcaption class="caption">-<a href="https://dinopixel.com/underfell-sans-pixel-art-10928">Art</a> by: Snas</figcaption>
-        <p>Underfell is an AU where the main character's moralities have been swaped meaning originaly kind monsters become evil and vice versa.</p>
-        </figure>
-        <figure class="horrortale AU">
-        <h3>Horrortale Sans</h3>
-        <img alt="An image of an alternate version of Sans in which he has gone insane because of the lack of resources. His skull has a hole on his top left and he is holding an axe." src="media/images/horrortale.jpg" >
-        <figcaption class="caption">-<a href="https://www.reddit.com/r/Undertale/comments/ofumdq/horrortale_sans_because_ive_never_drawn_him_before/">Art</a> by: [Deleted User]</figcaption>
-        <p>Horrortale is an AU set many years after a neutral run of the game where the monsters have gone insane as a result of the shutdown of the CORE (reactor that provides power to the underground) and the severe lack of resources available.</p>
-        </figure>
-        <figure class="inkSans AU">
-        <h3>Ink Sans</h3>
-        <img alt="An image of an alternate version of Sans called Ink Sans, he encourages people to create undertale AUs." src="media/images/InkSans.webp" >
-        <figcaption class="caption">-<a href="https://comyet.tumblr.com/post/137442123383/inksans">Art</a> by: comyet</figcaption>
-        <!-- <iframe width="400" height="250" src="https://www.youtube.com/embed/HVqrVvZDBZc"></iframe> -->
-        <p>Ink sans is an aternate version of sans which has the ability to create objects out of ink, he serves as the protector of AUs in general and he encourages people to create their own Undertale AU. Ink sans also has his own theme song and a custom coded fight fangame.</p>
-        </figure>
-        <figure class="errorSans AU">
-        <h3>Error Sans</h3>
-        <img alt="An image of an alternate version of Sans called Error Sans, he dedicates himself to try and destoy all AUs." src="media/images/error sans.jpg" >
-        <figcaption class="caption">-<a href="https://www.deviantart.com/straybird25/art/UNDERVERSE-XTRA-SCENE-2-Redraw-the-frame-734814605">Art</a> by: StrayBird25</figcaption>
-        <p>Error sans is an aternate version of sans which is said to have fallen into a dimension between universes and gliched beyond repair. Error Sans now dedicates himself to clense the multiverse of all AUs.</p>
-        </figure>
-        </section>
-        <div  onclick="buttonClick('auform.html')">
-            <p class="textLink formLink">
-                Want another AU added?
-            </p>
-        </div>
-        
+        <h1 id="pacifist">AU FORM</h1>
+        <h3 class="titleQuote" id="formSubtitle">
+            Make a proposal for an AU to be added to the AUs section
+        </h3>
+        <!--HTML form to google form from: https://www.youtube.com/watch?v=0udw0nol6Po -->
+        <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf_OLYB450UquqymyqpssUbBKIxdTXEu3kpSkGaj_L4SY1QQw/formResponse">
+            <fieldset>
+                <label for="AUTitle">AU Title / Character Name</label>
+                <input id="AUTitle" name="entry.1704036351" type="text" required>
+            </fieldset>
+            <fieldset>
+                <label for="AUDesc">Description of AU/Character</label>
+                <textarea id="AUDesc" name="entry.2019678066" type="text" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="AUImage">AU/Character Image</label>
+                <textarea id="AUImage" name="entry.665447301" type="text" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="AUCredit">Art Credit (Artist name and link to art if possible)</label>
+                <textarea id="AUCredit" name="entry.116148416" type="text" required></textarea>
+            </fieldset>
 
-        <!-- Social Logos. Bottom two from httpsgetdrawings.com/pixelated-icons -->
-        <!-- 
-        <hr>
-        <a href="https://github.com/"><img src="https://w4.rner.me/index_files/github.png" height="50" alt="GitHub"></a>
-        <a rev="Subdocument" href="https://linkedin.com/in/"><img src="https://w4.rner.me/index_files/linkedin.png" height="50" alt="LinkedIn"></a>
-        <a href="https://www.fediverse.to/"><img src="https://w4.rner.me/index_files/fediverse.png" height="50" alt="Fediverse"></a>
-        -->
+            <hr id="submitHr" class="secondaryHr">
+
+            <div id="submitBorder" class="buttonBorder">
+            <button class="button" type="submit">SUBMIT</button>
+            </div>
+        </form>
+        
         <hr>
         <section class="routes">
             <div class="buttonBorder" onclick="buttonClick('neutral.html')">
@@ -91,7 +70,6 @@
             </div>
         </section>
         <hr>
-        <br>
         <br>
         <small> 
             <p id="modified">Last modified:</p>

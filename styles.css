@@ -386,6 +386,7 @@ a:active {
 
 .textLink:hover {
     color: rgba(255,255,0,255);
+    cursor: pointer;
 }
 
 .textLink:active {
@@ -419,4 +420,67 @@ a:active {
         left: 0;
         top: 0;
     }
+}
+
+.formLink {
+    text-align: right;
+    margin-top: -2px;
+    font-weight: 500;
+}
+
+#formSubtitle {
+    font-style: normal;
+}
+
+label {
+    display: block;
+    font-family: ceroba;
+    letter-spacing: -1px;
+    margin: 10px;
+}
+
+fieldset {
+    width: fit-content;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+input {
+    border-radius: 5px;
+    color: black;
+    font-family: ceroba;
+    font-size: large;
+}
+
+textarea {
+    border-radius: 5px;
+    color: black;
+    font-family: ceroba;
+    font-size: large;
+    font-family: narration;
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+#AUCredit, #AUImage {
+    height: 26px;
+}
+
+button {
+    background-color: black;
+    border: 0;
+}
+
+#submitBorder {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submitHr {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -156,8 +156,9 @@ hr {
 }
 
 .titleQuote {
-    font-family: "Raleway";
+    font-family: narration;
     font-style: italic;
+    font-weight: 600;
 }
 
 .sansQuote {
